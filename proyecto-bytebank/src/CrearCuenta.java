@@ -3,16 +3,19 @@ public class CrearCuenta {
 
 	public static void main(String[] args) {
 		Cuenta primeraCuenta = new Cuenta();
-		primeraCuenta.saldo = 1000;
+		//primeraCuenta.setAgencia(22);
+		primeraCuenta.depositar(1000);
+		primeraCuenta.getSaldo();
 		// primeraCuenta.pais = "Colombia"; No Compila
 
-		System.out.println("Valor de la variable del objeto: " + primeraCuenta.saldo);
+		System.out.println("Valor de la variable del objeto primeraCuenta: " + primeraCuenta.getSaldo());
 
 		Cuenta segundaCuenta = new Cuenta();
-		segundaCuenta.saldo = 1000;
+		segundaCuenta.depositar(1000);
+		segundaCuenta.getSaldo();
 		
-		System.out.println(segundaCuenta.saldo);
-		System.out.println(primeraCuenta.agencia);
+		System.out.println("segundaCuenta" + segundaCuenta.getSaldo());
+		System.out.println("agencia" + " " + primeraCuenta.getAgencia());
 		
 		System.out.println(primeraCuenta);
 		System.out.println(segundaCuenta);
