@@ -9,8 +9,7 @@ public class TestReferencia2 {
 		
 		System.out.println("Clase ciente" + " " + cliente.getNombre());
 		
-		Cuenta cuentaDeJefferson = new Cuenta();
-		cuentaDeJefferson.setAgencia(0);
+		Cuenta cuentaDeJefferson = new Cuenta(1);
 		// Referenciando Clases
 		cuentaDeJefferson.setTitular(cliente);
 		

@@ -2,7 +2,7 @@
 public class CrearCuenta {
 
 	public static void main(String[] args) {
-		Cuenta primeraCuenta = new Cuenta();
+		Cuenta primeraCuenta = new Cuenta(1);
 		//primeraCuenta.setAgencia(22);
 		primeraCuenta.depositar(1000);
 		primeraCuenta.getSaldo();
@@ -10,7 +10,7 @@ public class CrearCuenta {
 
 		System.out.println("Valor de la variable del objeto primeraCuenta: " + primeraCuenta.getSaldo());
 
-		Cuenta segundaCuenta = new Cuenta();
+		Cuenta segundaCuenta = new Cuenta(2);
 		segundaCuenta.depositar(1000);
 		segundaCuenta.getSaldo();
 		
